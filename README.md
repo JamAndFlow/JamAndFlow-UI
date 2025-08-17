@@ -3,7 +3,7 @@
 ## Tech Stack
 - React
 - JavaScript
-- Vite
+- Tooling: Vite
 
 ## Installation
 1. Install dependencies:

@@ -1,0 +1,17 @@
+services:
+  ui:
+    build: .
+    container_name: jam_and_flow_ui
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    networks:
+      - jamandflows-network
+
+networks:
+  jamandflows-network:
+    external: true
